@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Animation</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    </head>
+
+    
+    <body>
+
+        <!--Header-->
+       
+            <header id="header" class="header d-flex align-items-center fixed-top container-fluid">
+                <div class="container-fluid container-x1 position-relative d-flex align-items-center justify-content-between">
+            
+                    <nav class="navbar navbar-expand-md navbar-dark w-100">
+                        <div class="container-fluid">
+                          <a class="navbar-brand d-flex w-50 mr-auto py-3" href="#">Bootslander</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse w-100" id="navbarNav">
+                            <ul class="navbar-nav px-lg-5 mr-auto w-100 text-end">
+                              <li class="nav-item ">
+                                <a class="nav-link" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                    
+              </header>
+
+        
+        <!--Main-->
+
+        <!-- <section class="hero section dark-background">
+            <img src="images/image11.jpg">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-lg-4 order-lg-last aos-init aos-animate" data-aos="fade-in">
+                        <h1>"Build Your Landing Page With"
+                            <span>Bootslander</span>
+                            </h1>
+                            <p>We are team of talented designers making websites with Bootstrap</p>
+                            <div class="d-flex">
+                                <a href="#about" class="btn-get-started">Get Started</a>
+                                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+    <main>
+        <div>
+        <section class="hero section dark-background hero-bg position-relative container-background " data-aos="zoom-out" 
+        data-aos-duration="1000">
+           
+            <!-- <img src="images/image11.jpg" class="hero-image"> -->
+          
+            <div class="container ">
+              <div class="row gy-4 align-items-center">
+                
+                <div class="col-lg-6">
+                  <h1 class="text-end" style="color: #b0e0e6">
+                    Build Your Landing Page With</h1>
+                    <h1 class="text-light text-end" style="text-decoration: underline;">
+                        <span>Bootslander</span>
+                    </h1>
+                  <p style="color: #b0e0e6">We are a team of talented designers making websites with Bootstrap</p>
+                  <div class="d-flex justify-content-start gap-3">
+                    <a href="#about" class="btn btn-primary">Get Started</a>
+                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-outline-light d-flex align-items-center">
+                      <i class="bi bi-play-circle me-2"></i><span>Watch Video</span>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- Image Content -->
+                <div class="col-lg-6 text-center" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
+                  <img src="images/page1image.png" class="img-fluid animated-image"  alt="Landing Page">
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        
+
+
+          <!--Section-->
+          <div>
+            <section class="section-layout py-5">
+
+                <div class="container">
+                    <div class="row align-items-xl-center gy-5 ">
+                        <div class="col-xl-5 content">
+                            <h3 class="about">About Us</h3>
+                            <h2 style="color: #191970;">Ducimus rerum libero reprehenderit cumque</h2>
+                            <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
+                            <a href="#" class="read-more btn btn-success"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                          </div>
+
+                          <div class="col-xl-7">
+                                    <div class="row gy-4 icon-boxes">
+                
+                                <div class="col-md-6">
+                                <div class="icon-box">
+                                  <i class="bi bi-buildings"></i>
+                                  <h3 style="color: #191970;">Eius provident</h3>
+                                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                                </div>
+                              </div> 
+                
+                              <div class="col-md-6">
+                                <div class="icon-box">
+                                  <i class="bi bi-clipboard-pulse"></i>
+                                  <h3 style="color: #191970;">Rerum aperiam</h3>
+                                  <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
+                                </div>
+                              </div> 
+                
+                              <div class="col-md-6">
+                                <div class="icon-box">
+                                  <i class="bi bi-command"></i>
+                                  <h3 style="color: #191970;">Veniam omnis</h3>
+                                  <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
+                                </div>
+                              </div> 
+                
+                              <div class="col-md-6">
+                                <div class="icon-box">
+                                  <i class="bi bi-graph-up-arrow"></i>
+                                  <h3 style="color: #191970;">Delares sapiente</h3>
+                                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
+                                </div>
+                              </div> 
+                
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+          </div>
+
+
+          <!--section-->
+          <section class="section-layout py-lg-3">
+            <div class="container-fluid py-5" style="background-color: #F8F4FF">
+            <div class="container">
+              <!-- Row 1 -->
+              <div class="row row-cols-1 row-cols-md-4 gy-4 py-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Lorem Ipsum</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Dolor Sitema</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Sed Perspiciatis</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Eiusmod Tempor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div class="row row-cols-1 row-cols-md-4 gy-4 py-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Consectetur Adipiscing</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Elit Nulla</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Ut Enim</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Minim Veniam</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Row 3 -->
+              <div class="row row-cols-1 row-cols-md-4 gy-4 py-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Disrda Pack</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Moton Ideal</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Verdo Park</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color: #191970;">
+                      <p class="card-text">Flavor Nivelanda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          </section>
+          
+          <!--Section-->
+
+          <section class="section-layout py-lg-5">
+            <div class="container align-items-center">
+              <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color:#006400">
+                      <p class="card-text" >
+                        <h1 class="text-center">232</h1>
+                        <h4 class="text-center">Happy Clients<h4>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body align-items-center" style="color:#006400">
+                      <p class="card-text">
+                        <h1 class="text-center">521</h1>
+                        <h4 class="text-center">Projects</h4>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body align-items-center" style="color:#006400">
+                      <p class="card-text">
+                        <h1 class="text-center">1463</h1>
+                        <h4 class="text-center">Hours of Support</h4>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body" style="color:#006400;">
+                      <p class="card-text">
+                        <h1 class="text-center">15</h1>
+                        <h4 class="text-center">Hard Workers</h4>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!--Check for details-->
+          <section>
+            <section class="layout-section py-4 text-center">
+              <div class="container">
+                <div class="row">
+                  
+                  <div class="col-md-6 p-4">
+                    <h6 class="text-start text-secondary py-2">DETAILS__________</h6>
+                    <h1 class="text-start"  style="color:#191970;">CHECK FOR DETAILS</h1>
+                    <img src="images/page4image.png">
+                  </div>
+                
+                  <div class="col-md-6 py-5 text-start">
+                    <div class=" container py-5">
+                    <h3 class="py-2" style="color:#191970;">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h6>
+                    <h6 class="text-secondary py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                    <h6 class="text-secondary py-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                    <h6 class="text-secondary py-2">Duis aute irure dolor in reprehenderit in voluptate velit.</h6>
+                    <h6 class="text-secondary py-2">Ullam est qui quos consequatur eos accusamus.</h6>
+                    </div   >
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+
+
+          <!--Corporis-->
+
+          <section class="layout-section py-4 text-center">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-md-6 py-5 text-start">
+                  <div class=" container py-5">
+                  <h3 class="py-2" style="color:#191970;">Corporis temporibus maiores provident</h6>
+                  <p class="text-secondary py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="text-secondary">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                  
+                  </div   >
+                </div>
+                <div class="col-md-6 p-4">
+                  
+                  <img src="images/page5image.png">
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </main>
+
+        <!--Sunt-->
+
+        <section class="layout-section py-4 text-center">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-6 p-4">
+                
+                <img src="images/image6.png">
+              </div>
+            
+              <div class="col-md-6 py-5 text-start">
+                <div class=" container py-5">
+                <h3 class="py-2" style="color:#191970;">Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h6>
+                <p class="text-secondary py-2">Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                <h6 class="text-secondary py-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                <h6 class="text-secondary py-2">Duis aute irure dolor in reprehenderit in voluptate velit.</h6>
+                <h6 class="text-secondary py-2">Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</h6>
+                </div   >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--page7-->
+
+        <section class="layout-section py-4 text-center">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-6 py-5 text-start">
+                <div class=" container py-5">
+                <h3 class="py-2" style="color:#191970;">Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h6>
+                <p class="text-secondary py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-secondary">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                
+                </div   >
+              </div>
+              <div class="col-md-6 p-4">
+                
+                <img src="images/image7.png">
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!--Gallery-->
+
+         <section class="layout-section py-4 text-center">
+          <div class="container text-start">
+            <p style="color:#a6a3a3">GALLERY</p>
+            <h1 style="color: #191970;">CHECK OUR GALLERY</h1>
+          </div>
+          <div class="container py-5">
+            <div class="row g-1"> 
+              <div class="col-3">
+                <img src="images/gallery-1.png" class="img-fluid"> 
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-2.png" class="img-fluid">
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-3.png" class="img-fluid">
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-4.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="row g-1 mt-1"> 
+              <div class="col-3">
+                <img src="images/gallery-5.png" class="img-fluid">
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-6.png" class="img-fluid">
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-7.png" class="img-fluid">
+              </div>
+              <div class="col-3">
+                <img src="images/gallery-8.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <!--Meet Our Team-->
+
+        <section>
+          <section class="layout-section py-4 text-center">
+            <div class="container">
+              <div class="container text-start">
+                <h6 style="color:#a6a3a3">TEAM</h6>
+                <h1 style="color: #191970;">CHECK OUR TEAM</h1>
+              </div>
+              <div class="row">
+                <div class="col-4 p-4 g-3">
+                  <img src="images/team-1.png">
+                  <div class="container py-3">
+                    <h5 class="text-start" style="color: #191970;">Walter White</h5>
+                    
+                    <p class="text-start" style="color:#a6a3a3">Chief Executive Officer
+                      <a href="#" class="me-2" style="color: #a6a3a3;" title="Twitter">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a href="#" class="ms-3 me-2" style="color: #a6a3a3;" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="#" class="me-2" style="color: #a6a3a3;" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" style="color: #a6a3a3;" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 p-4 g-3">
+                  <img src="images/team-2.png">
+                  <div class="container py-3">
+                    <h5 class="text-start" style="color: #191970;">Sarah Jhonson</h5>
+                    <p class="text-start flex-box" style="color:#a6a3a3">Product Manager
+                      <a href="#" class="me-2" style="color: #a6a3a3;" title="Twitter">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a href="#" class="ms-3 me-2" style="color: #a6a3a3;" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="#" class="me-2" style="color: #a6a3a3;" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" style="color: #a6a3a3;" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 p-4 p-3">
+                  <img src="images/team-3.png">
+                  <div class="container py-3">
+                    <h5 class="text-start" style="color: #191970;">William Anderson</h5>
+                    <p class="text-start" style="color:#a6a3a3">CTO
+                      <a href="#" class="me-2" style="color: #a6a3a3;" title="Twitter">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a href="#" class="ms-3 me-2" style="color: #a6a3a3;" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="#" class="me-2" style="color: #a6a3a3;" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" style="color: #a6a3a3;" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+    
+        </section>
+
+       
+        <!--Check Our Pricing-->
+
+        <section class="py-2 section-layout">
+          <div class="container">
+          <div>
+              <p class="text-start" style="color: #7C6E7F; font-size: 1.2rem; line-height: 1.6; margin: 0; ">PRICING</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+              <!-- Text -->
+              <h1 class="text-start" style="font-weight: bold; color: #191970;">Check Our Pricing</h1>
+            
+              <!-- Toggle Button -->
+              <div class="toggle-container" id="toggle">
+                <div class="toggle-option active" id="monthly">Monthly</div>
+                <div class="toggle-option" id="annually">Annually</div>
+              </div>
+            </div>
+      
+            <script>
+              const toggleContainer = document.getElementById('toggle');
+              const monthlyOption = document.getElementById('monthly');
+              const annuallyOption = document.getElementById('annually');
+            
+              toggleContainer.addEventListener('click', () => {
+                monthlyOption.classList.toggle('active');
+                annuallyOption.classList.toggle('active');
+              });
+            </script>
+      
+            <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+              <div class="col" >
+                <div class=" h-100 transparent" style="border-radius: 15px;">
+                 
+                  <div class="card-body px-2">
+                    <h5 class="card-title text-start" style="color: #191970">Free Plan</h5>
+                    <h1 class=" text-start" style="font-weight: bold; color: #56de8a;">$0</h1>
+                    <p  class="text-start" style="color: #7C6E7F; font-size: 1.0rem; line-height: 1.2; margin: 0; ">For individuals and small teams looking to manage their tasks</p>
+                    <h3 class="text-start text-dark py-3">This Plan Includes:</h3>
+                    <div class="text-dark">
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Unlimited contacts</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Bulk emailing</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">AI Integration</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">View & share up to 3 years</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Collaboration & permissions</h4>
+                      <button class="gray-button">Get Started</button>
+      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col" >
+                <div class=" h-100 transparent" style="border-radius: 15px;">
+                 
+                  <div class="card-body px-2">
+                    <h5 class="card-title text-start text-dark">Personal</h5>
+                    <h1 class="text-dark text-start" style="font-weight: bold;">$29</h1>
+                    <p  class="text-start" style="color: #7C6E7F; font-size: 1.0rem; line-height: 1.2; margin: 0; ">For individuals and small teams looking to manage their tasks</p>
+                    <h3 class="text-start text-dark py-3">This Plan Includes:</h3>
+                    <div class="text-dark">
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Unlimited contacts</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Bulk emailing</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">AI Integration</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">View & share up to 3 years</h4>
+                      <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Collaboration & permissions</h4>
+                      <button class="gray-button">Get Started</button>
+      
+                    </div>
+                    
+                  </div>
+                    
+                  </div>
+                </div>
+                <div class="col" >
+                  <div class=" h-100 transparent" style="border-radius: 15px;">
+                 
+                    <div class="card-body px-2">
+                      <h5 class="card-title text-start text-dark">Personal</h5>
+                      <h1 class="text-dark text-start" style="font-weight: bold;">$29</h1>
+                      <p  class="text-start" style="color: #7C6E7F; font-size: 1.0rem; line-height: 1.2; margin: 0; ">For individuals and small teams looking to manage their tasks</p>
+                      <h3 class="text-start text-dark py-3">This Plan Includes:</h3>
+                      <div class="text-dark">
+                        <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Unlimited contacts</h4>
+                        <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Bulk emailing</h4>
+                        <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">AI Integration</h4>
+                        <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">View & share up to 3 years</h4>
+                        <h4 class="text-start py-2" style="font-size: 1.1rem; line-height: 1.6; margin: 0; ">Collaboration & permissions</h4>
+                        <button class="gray-button">Get Started</button>
+        
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+        <!--contact form-->
+
+        <section class="section-layout">
+
+         
+          <div class="container">
+            <p style="color:#a6a3a3">Contact</p>
+            <h1 style="color: #191970;">Check Out Contact</h1>
+          </div>
+    
+          <div class="container">
+    
+            <div class="row gy-4 py-5" >
+    
+              <div class="col-lg-4" data-aos="zoom-in-left">
+                <div class="info-item d-flex" >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div class="py-3">
+                    <h4 style="color:#191970;">Address</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div><!-- End Info Item -->
+    
+                <div class="info-item d-flex">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div class="py-3">
+                    <h4 style="color:#191970;">Call Us</h4>
+                    <p>+1 5589 55488 55</p>
+                  </div>
+                </div><!-- End Info Item -->
+    
+                <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div class="py-3">
+                    <h4 style="color:#191970;">Email Us</h4>
+                    <p>info@example.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+    
+              </div>
+    
+              <div class="col-lg-8" data-aos="zoom-in-right">
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+    
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="" style="color:#a6a3a3">
+                    </div>
+    
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="" style="color:#a6a3a3">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="" style="color:#a6a3a3">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" style="color:#a6a3a3"></textarea>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                      
+                      <button class="btn btn-success" type="submit" style="border-radius:20px">Send Message</button>
+                    </div>
+    
+                  </div>
+                </form>
+              </div><!-- End Contact Form -->
+    
+            </div>
+    
+          </div>
+    
+        </section>
+
+
+
+
+        <!--Footer-->
+
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-section contact">
+              <h2>Bootslander</h2>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p><strong>Phone:</strong> +1 5589 55488 55</p>
+              <p><strong>Email:</strong> info@example.com</p>
+              <div class="social-icons">
+                <span>✕</span>
+                <span>📘</span>
+                <span>📷</span>
+                <span>🔗</span>
+              </div>
+            </div>
+      
+            <!-- Useful Links -->
+            <div class="footer-section">
+              <h4>Useful Links</h4>
+              <p>Home</p>
+              <p>About us</p>
+              <p>Services</p>
+              <p>Terms of service</p>
+              <p>Privacy policy</p>
+            </div>
+      
+            <!-- Our Services -->
+            <div class="footer-section">
+              <h4>Our Services</h4>
+              <p>Web Design</p>
+              <p>Web Development</p>
+              <p>Product Management</p>
+              <p>Marketing</p>
+              <p>Graphic Design</p>
+            </div>
+      
+            <!-- Newsletter -->
+            <div class="footer-section newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+              <div class="subscribe">
+                <input type="text" class="background" placeholder="Enter your email" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
+      
+          <hr />
+      
+          <!-- Bottom Row -->
+          <div class="footer-bottom">
+            <p>© Copyright <strong>Bootslander</strong> All Rights Reserved</p>
+            <p>Designed by <a href="#">BootstrapMade</a></p>
+          </div>
+      
+          <!-- Windows Activation Note -->
+          <div class="activate-windows">
+            <p>Activate Windows</p>
+            <p>Go to Settings to activate Windows.</p>
+          </div>
+      
+          <!-- Scroll to top -->
+          <div class="scroll-top">
+            <button>↑</button>
+          </div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+    </body>
+</html>
